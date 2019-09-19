@@ -6,7 +6,7 @@ database={SAM_DW};
 uid={adm.sam}; 
 pwd={w4otvGR6N32M4uR9};    ")
 
-datacon <- dbReadTable(con, SQL("dbo.SpeedSAMBMO204"))
+datacon <- dbReadTable(con, SQL("dbo.Speed10D"))
 datacon <- data.frame(datacon[1:240,3])
 data 	<- data.frame ("1" = datacon[1:24,],
 						"2" = datacon[25:48,],
